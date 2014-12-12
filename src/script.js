@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('#content').jscroll({
-		loadingHtml: '<small>(There are a lot of things, like 193,176 of them, so it might take a while to load. They are totaly loading though.)',
+		loadingHtml: '<small>(There are a lot of things, like 193,176 of them, so it might take a while to load. They are totally loading though.)',
 		padding: 20
 	});
 
