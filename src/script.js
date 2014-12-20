@@ -19,10 +19,10 @@ $(document).ready(function(){
 		var the1033 = get1033(data, 1033);
 
 		for (var i = 0; i < the1033.length; i++) {
-		// var google = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + data[i].item_name_edited+'&imgsz=large';
-		// $.getJSON(google, function(image){
-		// 	console.log(image);
-		// }) 
+		var google = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + the1033[i].item_name_edited+'&imgsz=large';
+		$.getJSON(google, function(image){
+			console.log(image);
+		}) 
 		 //make a div
 		 
 		  var thisDiv = document.createElement('div');
