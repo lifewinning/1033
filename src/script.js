@@ -20,6 +20,18 @@ $(document).ready(function(){
 
 		for (var i = 0; i < the1033.length; i++) {
 		var google = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + the1033[i].item_name_edited+'&imgsz=large';
+		
+		$.ajax({
+			type: 'POST',
+			url: google,
+			dataType: 'jsonp',
+			crossDomain: true,
+			cache:false,
+			success:  function (data) {
+				console.log(data);
+			}
+	    });
+
 		$.getJSON(google, function(image){
 			console.log(image);
 		}) 
